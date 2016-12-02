@@ -17,7 +17,7 @@ void displayPathtoPrincess(int n, vector <string> grid){
   // locate mario and princess
   short mario[2], princess[2];
   int up, left;
-  
+
   for(size_t i=0; i<n; i++) {
     for (size_t j=0; j<n; j++) {
       if(grid[i][j] == 'm') {
@@ -34,18 +34,18 @@ void displayPathtoPrincess(int n, vector <string> grid){
 
   if ((up = princess[0] - mario[0]) < 0) {
     for(; up < 0; ++up)
-      printf("UP\n");
+      cout << "UP\n";
   } else {
     for(; up > 0; --up)
-      printf("DOWN\n");
+      cout << "DOWN\n";
   }
 
   if ((left = princess[1] - mario[1]) < 0) {
     for(; left < 0; ++left)
-      printf("LEFT\n");
+      cout << "LEFT\n";
   } else {
     for(; left > 0; --left)
-      printf("RIGHT\n");
+      cout << "RIGHT\n";
   }
 }
 
